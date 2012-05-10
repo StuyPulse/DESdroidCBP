@@ -3,6 +3,7 @@ package edu.stuy.commands;
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.stuy.OI;
+import edu.stuy.subsystems.Drivetrain;
 import edu.stuy.subsystems.ExampleSubsystem;
 
 /**
@@ -16,6 +17,7 @@ public abstract class CommandBase extends Command {
     public static OI oi;
     // Create a single static instance of all of your subsystems
     public static ExampleSubsystem exampleSubsystem = new ExampleSubsystem();
+    public static Drivetrain drivetrain = new Drivetrain();
 
     public static void init() {
         // This MUST be here. If the OI creates Commands (which it very likely
@@ -27,6 +29,7 @@ public abstract class CommandBase extends Command {
 
         // Show what command your subsystem is running on the SmartDashboard
         SmartDashboard.putData(exampleSubsystem);
+        SmartDashboard.putData(drivetrain);
     }
 
     public CommandBase(String name) {
