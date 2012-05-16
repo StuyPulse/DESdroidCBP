@@ -5,7 +5,7 @@
 package edu.stuy.subsystems;
 
 import edu.stuy.RobotMap;
-import edu.stuy.commands.ArmJoystickControl;
+import edu.stuy.commands.ArmGamepadControl;
 import edu.wpi.first.wpilibj.Victor;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
@@ -25,7 +25,7 @@ public class Arm extends Subsystem {
     public void initDefaultCommand() {
         // Set the default command for a subsystem here.
         //setDefaultCommand(new MySpecialCommand());
-        setDefaultCommand(new ArmJoystickControl());
+        setDefaultCommand(new ArmGamepadControl());
     }
 
     public void moveArm(double stickVal) {
