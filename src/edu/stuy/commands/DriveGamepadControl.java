@@ -23,7 +23,7 @@ public class DriveGamepadControl extends CommandBase {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-        drivetrain.tankDrive(-oi.getGamepad().getRawAxis(2), -oi.getGamepad().getRawAxis(4));
+        drivetrain.mecanumDrive(oi.getGamepad().getRawAxis(1), -oi.getGamepad().getRawAxis(2), oi.getGamepad().getRawAxis(3));
     }
 
     // Make this return true when this Command no longer needs to run execute()
