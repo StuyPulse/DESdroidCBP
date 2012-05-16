@@ -6,6 +6,7 @@ import edu.stuy.OI;
 import edu.stuy.subsystems.Arm;
 import edu.stuy.subsystems.Drivetrain;
 import edu.stuy.subsystems.ExampleSubsystem;
+import edu.stuy.subsystems.Grabber;
 
 /**
  * The base for all commands. All atomic commands should subclass CommandBase.
@@ -20,6 +21,7 @@ public abstract class CommandBase extends Command {
     public static ExampleSubsystem exampleSubsystem = new ExampleSubsystem();
     public static Drivetrain drivetrain = new Drivetrain();
     public static Arm arm = new Arm();
+    public static Grabber grabber = new Grabber();
 
     public static void init() {
         // This MUST be here. If the OI creates Commands (which it very likely
@@ -33,6 +35,7 @@ public abstract class CommandBase extends Command {
         SmartDashboard.putData(exampleSubsystem);
         SmartDashboard.putData(drivetrain);
         SmartDashboard.putData(arm);
+        SmartDashboard.putData(grabber);
     }
 
     public CommandBase(String name) {

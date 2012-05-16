@@ -23,5 +23,8 @@ public class RobotMap {
 
     public static final int ARM_MOTOR_CHANNEL = 3;
 
+    public static final int GRABBER_UPPER_ROLLER_PORT = 4;
+    public static final int GRABBER_LOWER_ROLLER_PORT = 1;
+
     public static final int GAMEPAD_PORT = 1;
 }
