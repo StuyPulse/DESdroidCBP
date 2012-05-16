@@ -21,5 +21,7 @@ public class RobotMap {
     public static final int FRONT_RIGHT_MOTOR = 9;
     public static final int REAR_RIGHT_MOTOR = 10;
 
+    public static final int ARM_MOTOR_CHANNEL = 3;
+
     public static final int GAMEPAD_PORT = 1;
 }
